@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Search, Star } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { AddToCartButton } from "@/components/cart/add-to-cart-button"
 
 const games = [
   {
@@ -189,9 +190,26 @@ export function GameCatalog() {
                   )}
                 </div>
 
-                <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
-                  <Link href={`/topup/${game.id}`}>View Packages</Link>
-                </Button>
+                <div className="flex gap-2">
+                  <Button asChild className="flex-1 bg-purple-600 hover:bg-purple-700">
+                    <Link href={`/topup/${game.id}`}>View Packages</Link>
+                  </Button>
+                  <AddToCartButton
+                    item={{
+                      id: `${game.id}-popular`,
+                      type: "game",
+                      gameId: game.id,
+                      packageId: game.packages.find((p) => p.popular)?.amount || game.packages[0].amount,
+                      name: game.name,
+                      packageName: game.packages.find((p) => p.popular)?.amount || game.packages[0].amount,
+                      price: game.packages.find((p) => p.popular)?.price || game.packages[0].price,
+                      image: game.image,
+                      description: game.description,
+                    }}
+                    size="sm"
+                    className="bg-green-600 hover:bg-green-700"
+                  />
+                </div>
               </CardContent>
             </Card>
           </motion.div>

@@ -65,7 +65,7 @@ export function FeaturedGames() {
         <div className="absolute top-10 left-10 opacity-[0.015]">
           <div className="w-64 h-64 rounded-full bg-gradient-to-br from-purple-400/10 to-blue-400/10 flex items-center justify-center">
             <Image
-              src="/images/loot-portal-logo.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
               alt=""
               width={200}
               height={67}
@@ -76,7 +76,7 @@ export function FeaturedGames() {
         <div className="absolute bottom-20 right-20 opacity-[0.015]">
           <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-400/10 to-purple-400/10 flex items-center justify-center">
             <Image
-              src="/images/loot-portal-logo.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
               alt=""
               width={150}
               height={50}

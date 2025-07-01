@@ -58,8 +58,8 @@ export function LoadingScreen({ onComplete, duration = 3000 }: LoadingScreenProp
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             >
               <Image
-                src="/images/loot-portal-logo.png"
-                alt="Loot Portal"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+                alt="Loot Portal - Gaming Logo"
                 width={400}
                 height={133}
                 className="w-auto h-16 md:h-20 lg:h-24"

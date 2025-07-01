@@ -10,8 +10,8 @@ export function Footer() {
         <div className="absolute bottom-0 right-1/4 opacity-[0.01]">
           <div className="w-64 h-64 rounded-full bg-gradient-to-br from-purple-400/10 to-blue-400/10 flex items-center justify-center">
             <Image
-              src="/images/loot-portal-logo.png"
-              alt=""
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+              alt="Loot Portal - Gaming Logo"
               width={200}
               height={67}
               className="w-auto h-12 opacity-20"
@@ -27,8 +27,8 @@ export function Footer() {
             <div className="flex items-center">
               <div className="bg-white/5 rounded-full p-3 border border-white/10">
                 <Image
-                  src="/images/loot-portal-logo.png"
-                  alt="Loot Portal"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+                  alt="Loot Portal - Gaming Logo"
                   width={200}
                   height={60}
                   className="w-auto h-8"

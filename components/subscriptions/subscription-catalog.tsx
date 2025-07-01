@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Search, Star, Check } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { AddToCartButton } from "@/components/cart/add-to-cart-button"
 
 const subscriptions = [
   {
@@ -231,17 +232,35 @@ export function SubscriptionCatalog() {
                             </div>
                           ))}
                         </div>
-                        <Button
-                          asChild
-                          size="sm"
-                          className={`w-full ${
-                            plan.popular
-                              ? `bg-gradient-to-r ${subscription.color} hover:opacity-90`
-                              : "bg-white/10 hover:bg-white/20 text-white"
-                          }`}
-                        >
-                          <Link href={`/checkout?service=${subscription.id}&plan=${plan.id}`}>Subscribe Now</Link>
-                        </Button>
+                        <div className="flex gap-2">
+                          <Button
+                            asChild
+                            size="sm"
+                            className={`flex-1 ${
+                              plan.popular
+                                ? `bg-gradient-to-r ${subscription.color} hover:opacity-90`
+                                : "bg-white/10 hover:bg-white/20 text-white"
+                            }`}
+                          >
+                            <Link href={`/checkout?service=${subscription.id}&plan=${plan.id}`}>Subscribe</Link>
+                          </Button>
+                          <AddToCartButton
+                            item={{
+                              id: `${subscription.id}-${plan.id}`,
+                              type: "subscription",
+                              subscriptionId: subscription.id,
+                              packageId: plan.id,
+                              name: subscription.name,
+                              packageName: plan.duration,
+                              price: plan.price,
+                              image: subscription.image,
+                              description: subscription.description,
+                            }}
+                            size="sm"
+                            variant="outline"
+                            className="border-white/20 text-white hover:bg-white/10"
+                          />
+                        </div>
                       </div>
                     </div>
                   ))}

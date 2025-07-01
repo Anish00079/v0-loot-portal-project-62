@@ -19,6 +19,7 @@ interface QRPaymentSectionProps {
   onFileUpload: (file: File) => void
   onNext: () => void
   onBack: () => void
+  totalAmount?: number
 }
 
 const paymentMethods = [
@@ -52,6 +53,7 @@ export function QRPaymentSection({
   onFileUpload,
   onNext,
   onBack,
+  totalAmount,
 }: QRPaymentSectionProps) {
   const [selectedMethod, setSelectedMethod] = useState<string>(orderData.paymentMethod || "")
   const [uploadedFile, setUploadedFile] = useState<File | null>(null)
@@ -147,7 +149,7 @@ export function QRPaymentSection({
               <p className="text-gray-300 mb-4">{paymentMethods.find((m) => m.id === selectedMethod)?.instructions}</p>
               <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-3">
                 <p className="text-yellow-300 text-sm">
-                  <strong>Amount:</strong> Rs. 500 (Example amount - will be calculated based on selected package)
+                  <strong>Amount:</strong> Rs. {totalAmount?.toLocaleString() || "500"}
                 </p>
               </div>
             </CardContent>

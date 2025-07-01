@@ -3,9 +3,10 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X, User, ShoppingCart } from "lucide-react"
+import { Menu, X, User } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import { CartButton } from "@/components/cart/cart-button"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,8 +26,8 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/loot-portal-logo.png"
-              alt="Loot Portal"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+              alt="Loot Portal - Gaming Logo"
               width={200}
               height={60}
               className="w-auto h-8"
@@ -54,10 +55,7 @@ export function Header() {
               <User className="h-4 w-4 mr-2" />
               Login
             </Button>
-            <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-medium tracking-wide rounded-full">
-              <ShoppingCart className="h-4 w-4 mr-2" />
-              Cart
-            </Button>
+            <CartButton />
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,10 +94,7 @@ export function Header() {
                     <User className="h-4 w-4 mr-2" />
                     Login
                   </Button>
-                  <Button className="w-full justify-start bg-white text-black hover:bg-gray-100 font-medium rounded-full">
-                    <ShoppingCart className="h-4 w-4 mr-2" />
-                    Cart
-                  </Button>
+                  <CartButton />
                 </div>
               </nav>
             </motion.div>

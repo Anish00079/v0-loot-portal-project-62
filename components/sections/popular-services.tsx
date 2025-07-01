@@ -50,7 +50,7 @@ export function PopularServices() {
         <div className="absolute top-1/2 left-1/4 opacity-[0.01]">
           <div className="w-96 h-96 rounded-full bg-gradient-to-br from-purple-400/10 to-blue-400/10 flex items-center justify-center">
             <Image
-              src="/images/loot-portal-logo.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
               alt=""
               width={300}
               height={100}

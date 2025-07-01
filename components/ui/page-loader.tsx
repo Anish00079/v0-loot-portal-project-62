@@ -18,8 +18,8 @@ export function PageLoader({ message = "Loading..." }: PageLoaderProps) {
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
         >
           <Image
-            src="/images/loot-portal-logo.png"
-            alt="Loading"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+            alt="Loot Portal - Gaming Logo"
             width={200}
             height={67}
             className="w-auto h-12 opacity-80"

@@ -22,8 +22,8 @@ export function HeroSection() {
         >
           <div className="bg-black/20 backdrop-blur-md rounded-full p-6 border border-white/20 shadow-2xl">
             <Image
-              src="/images/loot-portal-logo.png"
-              alt="Loot Portal"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+              alt="Loot Portal - Gaming Logo"
               width={300}
               height={100}
               className="w-auto h-16 md:h-20"

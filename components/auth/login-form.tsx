@@ -54,8 +54,8 @@ export function LoginForm() {
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
               <Image
-                src="/images/loot-portal-logo.png"
-                alt="Loot Portal"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lootportal%20logo-vVyvZae35C7EU1qBlNPsCgk8tI9Bkm.png"
+                alt="Loot Portal - Gaming Logo"
                 width={200}
                 height={60}
                 className="w-auto h-12"
